@@ -8,21 +8,17 @@
 <dd><p>normalize an email by converting it into an all lowercase
 This will be extended in te future by doing more robust email validation</p>
 </dd>
-<dt><a href="#concatName">concatName(source)</a> ⇒ <code>String</code></dt>
+<dt><a href="#cleanString">cleanString(source)</a> ⇒ <code>String</code></dt>
 <dd><p>Clean a string from special characters, HTML tags and trailing dots and commas</p>
 </dd>
 <dt><a href="#cleanURI">cleanURI(source)</a> ⇒ <code>String</code></dt>
 <dd><p>Clean a URI from special characters, HTML tags and trailing dots and commas</p>
 </dd>
-<dt><a href="#concatName">concatName()</a> ⇒ <code>String</code></dt>
-<dd><p>Concatinate a string with one or more other strings separated by a space
-Since we might be passing one or more (n) strings, we will use <code>arguments</code></p>
+<dt><a href="#concatName">concatName(source)</a> ⇒ <code>String</code></dt>
+<dd><p>Clean a string from special characters, HTML tags and trailing dots and commas</p>
 </dd>
 <dt><a href="#concatString">concatString()</a> ⇒ <code>String</code></dt>
 <dd><p>Concatinate a string with one or more other strings</p>
-</dd>
-<dt><a href="#isValidString">isValidString(str)</a></dt>
-<dd><p>A string is considered valid if is a string and is not empty</p>
 </dd>
 <dt><a href="#concatWithComma">concatWithComma()</a> ⇒ <code>String</code></dt>
 <dd><p>Concatinate a string with one or more other strings and join
@@ -37,24 +33,9 @@ them using comma and space.</p>
 <dt><a href="#formatDate">formatDate(date, [format], [isUtc])</a> ⇒ <code>String</code></dt>
 <dd><p>Format a date according to parameters</p>
 </dd>
-<dt><a href="#generateCleanId">generateCleanId()</a> ⇒ <code>String</code></dt>
-<dd><p>Create an md5 hash based on concatentating passed String Values
-Since we might be passing one or more (n) strings, we will use <code>arguments</code></p>
-</dd>
-<dt><a href="#generateFacebookImageLink">generateFacebookImageLink(Facebook)</a> ⇒ <code>String</code></dt>
-<dd><p>Generate a link for the Facebook profile photo based on the facebook ID</p>
-</dd>
 <dt><a href="#generateId">generateId()</a> ⇒ <code>String</code></dt>
 <dd><p>Create an md5 hash based on concatentating passed String Values
 This function will take multiple arguments that will be extracted via the <code>arguments</code> keyword</p>
-</dd>
-<dt><a href="#generateIdForLinks">generateIdForLinks(source)</a> ⇒ <code>String</code></dt>
-<dd><p>Create an md5 hash based on concatentating passed String Values for links
-The function cleans the URIs before creating the MD5 hash</p>
-</dd>
-<dt><a href="#generateIdFromLanguageCode">generateIdFromLanguageCode(languageCode)</a> ⇒ <code>String</code></dt>
-<dd><p>Lanaugage id generation is done on the value of the language. This function will generate the id from a language ISO code
-by doing a lookup first on the language valuye then generate the id from that one</p>
 </dd>
 <dt><a href="#generateUUID">generateUUID()</a> ⇒ <code>String</code></dt>
 <dd><p>Create an random UUID value</p>
@@ -162,18 +143,6 @@ Since we might be passing one or more (n) strings, we will use `arguments`
 ## concatString() ⇒ <code>String</code>
 Concatinate a string with one or more other strings
 
-**Kind**: global function
-<a name="isValidString"></a>
-
-## isValidString(str)
-A string is considered valid if is a string and is not empty
-
-**Kind**: global function
-
-| Param | Type |
-| --- | --- |
-| str | <code>String</code> |
-
 <a name="concatWithComma"></a>
 
 ## concatWithComma() ⇒ <code>String</code>
@@ -219,55 +188,11 @@ Format a date according to parameters
 | [format] | <code>String</code> |  | Format of the date. |
 | [isUtc] | <code>Boolean</code> | <code>true</code> | If timezone should be utc or not |
 
-<a name="generateCleanId"></a>
-
-## generateCleanId() ⇒ <code>String</code>
-Create an md5 hash based on concatentating passed String Values
-Since we might be passing one or more (n) strings, we will use `arguments`
-
-**Kind**: global function
-**Returns**: <code>String</code> - result the concatenated cleaned string
-<a name="generateFacebookImageLink"></a>
-
-## generateFacebookImageLink(Facebook) ⇒ <code>String</code>
-Generate a link for the Facebook profile photo based on the facebook ID
-
-**Kind**: global function
-
-| Param | Type | Description |
-| --- | --- | --- |
-| Facebook | <code>String</code> | profile ID |
-
 <a name="generateId"></a>
 
 ## generateId() ⇒ <code>String</code>
 Create an md5 hash based on concatentating passed String Values
 This function will take multiple arguments that will be extracted via the `arguments` keyword
-
-**Kind**: global function
-<a name="generateIdForLinks"></a>
-
-## generateIdForLinks(source) ⇒ <code>String</code>
-Create an md5 hash based on concatentating passed String Values for links
-The function cleans the URIs before creating the MD5 hash
-
-**Kind**: global function
-
-| Param | Type | Description |
-| --- | --- | --- |
-| source | <code>String</code> | the URI we want to clean out |
-
-<a name="generateIdFromLanguageCode"></a>
-
-## generateIdFromLanguageCode(languageCode) ⇒ <code>String</code>
-Lanaugage id generation is done on the value of the language. This function will generate the id from a language ISO code
-by doing a lookup first on the language valuye then generate the id from that one
-
-**Kind**: global function
-
-| Param | Type | Description |
-| --- | --- | --- |
-| languageCode | <code>String</code> | The language code |
 
 <a name="generateUUID"></a>
 
