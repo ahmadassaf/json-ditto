@@ -10,16 +10,11 @@ module.exports = {
 	concatWithComma: require('./concatWithComma'),
 	createURL: require('./createURL'),
 	extractName: require('./extractName'),
-	generateCleanId: require('./generateCleanId'),
-	generateFacebookImageLink: require('./generateFacebookImageLink'),
 	generateId: require('./generateId'),
-	generateIdForLinks: require('./generateIdForLinks'),
-	generateIdFromLanguageCode: require('./generateIdFromLanguageCode'),
 	generateUUID: require('./generateUUID'),
     getCountryCode: require('./getCountryCode'),
     getCountryName: require('./getCountryName'),
 	getLanguageCode: require('./getLanguageCode'),
-	getLanguageFromCode: require('./getLanguageFromCode'),
 	getLinkService: require('./getLinkService'),
 	getLinkType: require('./getLinkType'),
 	getValueAtPath: require('./getValueAtPath'),
@@ -30,5 +25,4 @@ module.exports = {
 	splitList: require('./splitList'),
 	uniqueArray: require('./uniqueArray'),
 	formatDate: require('./formatDate'),
-	standardiseRleTitle: require('./standardiseRoleTitle')
 };

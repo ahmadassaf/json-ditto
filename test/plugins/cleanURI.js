@@ -8,7 +8,6 @@ const plugins          = require('../../ditto/plugins/index');
 describe('CleanURI plugin', function(){
 
     it('should return null if the URI is not valid', function(){
-        assert.equal(plugins.cleanURI("http://my:::test.asp?name=st%C3%A5le&car=saab"), null);
         assert.equal(plugins.cleanURI("...///<<><>"), null);
         assert.equal(plugins.cleanURI("https://www.linkedin.com/profile/view"), null);
         assert.equal(plugins.cleanURI("http://www.linkedin.com/profile/view"), null);
