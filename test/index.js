@@ -1,2 +1,1 @@
 require('./ditto');
-require('./socialServices');
